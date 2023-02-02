@@ -117,7 +117,9 @@ public:
 		cout << "Model: " << model << endl;
 		cout << "RAM: " << ram << endl;
 	}
-	~phone();
+	~phone() {
+		cout << "phone destructor" << endl;
+	}
 };
 
 class sausages : public Good
